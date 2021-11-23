@@ -8,8 +8,8 @@
 </head>
 <body>
     <div id="container">
-        <ul v-if="email.length >= 10" v-for="list,i in email" :key="i">
-            <li>{{email[i]}}</li>
+        <ul v-if="email.length >= 10">
+            <li v-for="list,i in email" :key="i">{{email[i]}}</li>
         </ul>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
